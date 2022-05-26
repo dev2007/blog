@@ -77,7 +77,7 @@ module.exports = {
 
     // 评论配置，参考下方 [页面评论] 章节
     comments: {
-      owner: 'github',
+      owner: 'dev2007',
       repo: 'gitalk-comment',
       clientId: '2a33e1cb0be96f2d43a3',
       clientSecret: '0da0b8b354365388cceffecd8c62e35393b635af',
