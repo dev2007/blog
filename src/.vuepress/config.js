@@ -26,6 +26,7 @@ module.exports = {
       location: '中国·成都',
       organization: 'MortNon',
       avatar: '/wolf.png',
+      email: 'mortnon@outlook.com',
       sns: {
         github: {
           account: 'dev2007',
