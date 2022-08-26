@@ -26,12 +26,12 @@ Elasticsearch 为各种数据类型提供接近实时的搜索和分析。不论
 
 > [What is Elasticsearch?](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
 
-> [什么是 Elasticsearch？](https://docs.es.shiyueshuyi.xyz/#/es)
+> [什么是 Elasticsearch？](https://elasticsearch.bookhub.tech/#/es)
 
 更多的介绍：
-> [数据输入：文档和索引](https://docs.es.shiyueshuyi.xyz/#/intro/datain)
-> [信息输出：搜索和分析](https://docs.es.shiyueshuyi.xyz/#/intro/inforout)
-> [可伸缩性和弹性](https://docs.es.shiyueshuyi.xyz/#/intro/scalability)
+> [数据输入：文档和索引](https://elasticsearch.bookhub.tech/#/intro/datain)
+> [信息输出：搜索和分析](https://elasticsearch.bookhub.tech/#/intro/inforout)
+> [可伸缩性和弹性](https://elasticsearch.bookhub.tech/#/intro/scalability)
 
 我们可以知道，Elastic 整个体系中，除了 Elasticsearch，还有 Logstash 和 Beats，可以用来配合 Elasticseach 进行数据采集和合计等，而 Kibana 提供界面进行数据展示和操作。
 
