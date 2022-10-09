@@ -11,7 +11,7 @@ header-image: /assets/img/elastic-logo.svg
 <!-- more -->
 
 > [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-> [安装 Elasticsearch](https://docs.es.shiyueshuyi.xyz/#/setup/install)
+> [安装 Elasticsearch](https://elasticsearch.bookhub.tech/#/setup/install)
 
 在文档中，分别对 Linux 和 MacOS 上使用压缩包、在 Windows 上使用 `.zip` 包、单独的 Debian 包、单独的 RPM 包、使用 Docker 等方式安装 Elasticsearch 分别进行了介绍。
 
@@ -107,6 +107,6 @@ sysctl -w vm.max_map_count=262144
 -v full_path_to/custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
 ```
 
-以上就是针对各种环境安装使用 Elasticsearch 需要注意的一些很特别的点的碎碎念。更多的文档资料，可以查看 [Elasticsearch 中文文档](https://docs.es.shiyueshuyi.xyz/)。
+以上就是针对各种环境安装使用 Elasticsearch 需要注意的一些很特别的点的碎碎念。更多的文档资料，可以查看 [Elasticsearch 中文文档](https://elasticsearch.bookhub.tech/)。
 
 接下来，我们将先跳过官方文档中关于如何配置 Elasticsearch 的更多的讲解，直接进入对 Elasticsearch 相关模块的讲解，并结合 Http API 进行学习。请关注后续文章。
