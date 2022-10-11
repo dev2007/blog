@@ -29,7 +29,7 @@ header-image: /assets/img/featured-3.jpg
 
 ![EventSourcingInitial](/assets/img/EventSourcingInitial.jpg)
 
-这是一个 `CQRS` 模型（详情参阅文章 [How To Understand CQRS In Microservices Architecture](https://datamify.com/architecture/how-to-understand-cqrs-in-microservices-architecture/)）。
+这是一个 `CQRS` 模型（详情参阅文章 [如何理解微服务体系结构中的 CQRS](/posts/2022/10/10/microservice-cqrs)）。
 
 假设我们只对电影评分功能感兴趣。用户以评分的形式（例如从 0 到 10）留下对电影的意见。这样：
 
