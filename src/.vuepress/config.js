@@ -14,6 +14,19 @@ module.exports = {
 
   theme: 'meteorlxy',
 
+  plugins: [
+    [
+      '@vuepress/google-analytics', {
+        'ga': ''
+      }
+    ],
+    [
+      '@renovamen/vuepress-plugin-baidu-tongji', {
+        'ba': '9ddaa27308563507685bc2eb3c09ec28'
+      }
+    ]
+  ],
+
   themeConfig: {
     lang: Object.assign(require('vuepress-theme-meteorlxy/lib/langs/zh-CN'), {
       home: '阿呜的边城',
