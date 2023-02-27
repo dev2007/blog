@@ -1,0 +1,53 @@
+# 未来可期！Jakarta 项目将成为 Java 生态系统中不可或缺的一部分
+
+Java 生态系统一直以来都是开发人员们最为喜爱的技术之一，而 Jakarta 项目则是 Java 生态系统中不可或缺的一部分。作为 Java 技术规范和参考实现的重要组成部分，Jakarta 项目提供了诸如 Jakarta EE、Jakarta Persistence、Jakarta JSON、Jakarta Batch 等规范和参考实现，为 Java 开发人员提供了重要的基础设施和工具。
+
+但我们从很多开源工具中，以前常看到的是 javax，而现在却常见的是 jakarta，他们有什么区别和联系呢？
+
+## 什么是 Jakarta？
+
+Jakarta 是一个 Java 生态系统中的命名空间，旨在为 Java 技术和规范提供一个开放、中立的基础。Jakarta 由 Java 基金会的一个开放源代码项目组成，提供了一系列的规范和参考实现，例如 Jakarta EE、Jakarta Persistence、Jakarta JSON、Jakarta Batch 等等。
+
+在 Java 生态系统中，最初，javax 是一个缩写，代表 Java Extension。javax 作为包名，包含了一系列的 Java 扩展包，它们提供了各种不同的功能，例如 servlet、JDBC、JMS 等。这些扩展包通常是 Java 标准库之外的库，需要单独下载和安装，但它们是 Java 核心 API 的补充，可以帮助 Java 开发人员完成各种任务。
+
+随着时间的推移，Java 技术和规范不断发展和演变，Java 生态系统也在不断变化。为了跟上这种变化，Jakarta 项目应运而生。Jakarta 旨在为 Java 开发人员提供一个更加开放和中立的基础，使他们能够更轻松地构建高效、安全、可靠的应用程序。
+
+目前，Jakarta 最知名的项目之一是 Jakarta EE。它是企业级 Java 应用程序的一个规范和平台，由一系列的 API 和技术规范组成。
+
+在过去，这个项目被称为 Java EE，但在 2019 年改名为 Jakarta EE，由 Jakara 组织来管理和推进。Jakarta EE 提供了一些常用的 API 和技术规范，例如 Servlet、JPA、JMS、JAX-RS 等等。这些规范可以帮助 Java 开发人员构建基于 Web 的企业级应用程序，同时还提供了一些常用的安全、事务和持久化功能。
+
+除了 Jakarta EE 之外，Jakarta 还涉及到许多其他的项目和规范。例如 Jakarta Persistence 提供了 Java 持久化 API 的实现，允许开发人员将 Java 对象映射到关系数据库中。Jakarta JSON 提供了 Java 对象与 JSON 数据之间的转换 API。Jakarta Batch 提供了 Java 批处理规范的实现，允许开发人员以高效的方式处理大量数据。Jakarta RESTful Web Services 提供了 Java RESTful Web 服务规范的实现，允许开发人员构建基于 REST 的 Web 应用程序。Jakarta Security 提供了 Java 安全规范的实现，提供一些常用的安全功能，例如身份验证和授权。Jakarta MVC 提供了 Java Web 应用程序模型视图控制器规范的实现，允许开发人员构建基于 MVC 架构的 Web 应用程序。
+
+## Tomcat 里的 javax 和 jakarta
+
+作为 Java EE 的重要实现项目，Apache Tomcat 项目中，javax 和 jakarta 都有出现。
+
+在 Tomcat 9.0.x 版本中，javax 包含了一系列 Java Servlet、Java WebSocket 和 Java EL 扩展包，例如 javax.servlet、javax.websocket 和 javax.el 等等，版本号为 4.0。
+
+在 Tomcat 10.0.x 版本中，由于 Java EE 的迁移，javax 被替换成了 jakarta。因此，Tomcat 10.0.x 版本中的 jakarta 包含了一系列的 Jakarta Servlet、Jakarta WebSocket 和 Jakarta EL 扩展包，例如 jakarta.servlet、jakarta.websocket 和 jakarta.el 等等，版本号为 5.0。
+
+需要注意的是，虽然 Tomcat 10.0.x 中的包名已经改为 jakarta，但是这些包的 API 和功能与之前的 javax 包保持兼容，因此开发人员可以在迁移应用程序时逐步将包名替换为 jakarta。
+
+总的来说，Tomcat 9.0.x 版本中使用 javax 包，Tomcat 10.0.x 版本中使用 jakarta 包。但是，这两个版本中的包都包含了相同的 Servlet、WebSocket 和 EL 规范，只是包名和版本号略有不同。
+
+同时，由于 Tomcat 的这个变化，我们需要注意与之相对应的其他组件的变化，比如我们使用Spring Boot 框架>
+
+## Spring Boot
+
+Spring Boot 2.5.0 版本开始支持 Tomcat 10。
+
+在 Spring Boot 2.5.0 中，Tomcat 10 成为默认的嵌入式 Servlet 容器。如果您使用 Spring Boot 2.5.0 及以上版本，且没有显式指定嵌入式 Servlet 容器，则 Spring Boot 将默认使用 Tomcat 10。如果您希望使用其他嵌入式 Servlet 容器，例如 Jetty 或 Undertow，可以在项目中显式配置。
+
+需要注意的是，Tomcat 10 与之前的版本有一些不同之处，例如包名从 javax 改为了 jakarta，某些 API 也有所变化。因此，在迁移项目到 Tomcat 10 时，需要逐步将项目中的 javax 包名替换为 jakarta，同时对于 API 的变化也需要进行适当的调整。
+
+总的来说，从 Spring Boot 2.5.0 开始，可以使用 Tomcat 10 作为默认的嵌入式 Servlet 容器。如果您希望使用其他嵌入式 Servlet 容器，可以在项目中显式配置。在迁移项目到 Tomcat 10 时，需要注意包名和 API 的变化，进行适当的调整。
+
+## Jakarta 的未来
+
+首先，Jakarta 项目有着强大的支持者和社区。Java 基金会作为 Jakarta 项目的背后支持者，致力于推动 Java 技术的发展和创新，为 Jakarta 项目提供了坚实的基础。同时，Jakarta 项目还拥有一个庞大的社区，包括开发人员、组织、公司等等，这些人士为 Jakarta 项目的发展和推广做出了巨大的贡献。
+
+其次，Jakarta 项目提供了许多重要的 Java 技术规范和参考实现，例如 Jakarta EE、Jakarta Persistence、Jakarta JSON、Jakarta Batch 等等。这些规范和参考实现是 Java 生态系统中不可或缺的一部分，为 Java 开发人员提供了重要的基础设施和工具。随着 Java 技术的不断发展和演进，我相信 Jakarta 项目将继续推出更多的技术规范和参考实现，为 Java 开发人员提供更好的开发体验和更高效的工具。
+
+此外，随着云计算、人工智能等新兴技术的不断涌现，Java 技术也面临着新的挑战和机遇。作为 Java 生态系统的一部分，Jakarta 项目需要适应这些变化，为 Java 开发人员提供适应新技术的工具和平台。例如，Jakarta EE 9 已经支持了容器化部署，为 Java 应用程序的云化部署提供了更好的支持。我相信，在未来，Jakarta 项目将继续适应新技术的发展，为 Java 开发人员提供更好的支持和工具。
+
+综上所述， Jakarta 在未来将继续发展壮大，成为 Java 生态系统中不可或缺的一部分，为 Java 开发人员提供更好的支持和工具。
