@@ -1,0 +1,121 @@
+探索Mesos：被Airbnb、Uber和Twitter等巨头广泛使用的开源分布式系统管理平台
+
+Mesos是一个开源的分布式系统内核，它提供了高可用性、可伸缩性和容错性，并能够在大规模计算机集群中有效地管理和分配资源。Mesos最初是由加州大学伯克利分校的AMPLab开发的，现已成为Apache软件基金会的顶级项目之一。
+
+Mesos提供了一个统一的接口，使得不同的应用程序可以轻松地共享集群资源，并提供了一些核心功能，如故障检测、任务调度、资源隔离和容器化等。它还支持多种应用程序框架，如Apache Hadoop、Apache Spark、Apache Kafka等，以及各种语言的API，包括Java、C++、Python等。
+
+通过Mesos，用户可以更高效地利用集群资源，提高应用程序的性能和可靠性。同时，Mesos还能够自动化资源的分配和管理，使得系统管理员可以更轻松地管理大规模的计算机集群。
+
+Mesos和Kubernetes（简称为K8s）都是开源的分布式系统管理平台，它们的主要目标都是提高集群资源利用率、简化应用程序部署和管理、提供高可用性和可伸缩性。虽然两者在实现方式和架构上有所不同，但它们有许多相似之处。
+
+Mesos和Kubernetes的主要区别在于它们的设计目标。Mesos早期主要面向大型计算机集群的资源管理，而Kubernetes则更加注重容器编排和管理。在Mesos中，应用程序可以使用各种不同的框架（如Hadoop、Spark等）来共享资源。而在Kubernetes中，应用程序是以容器的方式运行的，并通过不同的容器编排技术（如Deployment、ReplicaSet、StatefulSet等）来管理这些容器。
+
+尽管两者在设计上有所不同，但它们的目标和方法是相似的：管理分布式系统，提高资源利用率和可靠性。同时，Kubernetes的出现也对Mesos产生了一定的冲击，因为Kubernetes的用户数量和社区规模在不断增长，越来越多的公司选择使用Kubernetes作为其云原生应用程序管理平台。不过，Mesos仍然是一个非常强大的分布式系统管理平台，它在很多领域仍然具有非常广泛的应用场景。
+
+相对于Kubernetes（K8s），Mesos有以下一些优点和缺点：
+
+优点：
+
+资源管理更加灵活：Mesos采用了一种“两级调度器”架构，能够更好地管理各种不同类型的资源。Mesos能够管理计算资源、存储资源、网络资源等多种资源，并且可以对资源进行细粒度的调度和管理。而K8s主要面向容器资源的管理，不如Mesos灵活。
+支持多种框架：Mesos支持多种应用程序框架，如Hadoop、Spark等，而K8s则主要面向容器编排和管理。如果需要同时管理不同类型的应用程序，Mesos可能更加适合。
+更加通用的API：Mesos的API相对于K8s更加通用，可以使用不同的编程语言和框架进行开发和访问。
+缺点：
+
+学习曲线较高：Mesos的架构比K8s更加复杂，需要更多的学习和了解。Mesos的文档相对于K8s来说也更加少，因此上手难度较大。
+生态系统不如K8s完备：K8s的生态系统非常丰富，有各种不同的工具和插件，而Mesos的生态系统相对来说比较单薄。
+不太适合容器编排：尽管Mesos支持容器化，但是相对于K8s来说不是很适合容器编排。如果只需要管理和部署容器，K8s可能是更好的选择。
+需要注意的是，选择Mesos还是K8s取决于具体的应用场景和需求，不同的系统都有其适用的场景和优缺点。
+
+Mesos是一个被广泛应用于生产环境中的开源分布式系统管理平台，下面列举一些使用Mesos的公司和产品：
+
+Airbnb：使用Mesos管理其内部数据中心，包括Hadoop、Spark等数据处理框架。
+Uber：使用Mesos作为其集群资源管理平台，以支持各种数据处理和分析工作负载。
+Twitter：使用Mesos管理其实时数据处理平台。
+Apple：使用Mesos作为其内部服务的基础设施。
+Mesosphere：一家专门提供Mesos企业级支持和服务的公司。
+Mesosfer：一家提供基于Mesos的移动后端开发和部署服务的公司。
+Marathon：一个基于Mesos的容器编排和管理平台。
+Chronos：一个基于Mesos的分布式作业调度系统。
+除了以上这些公司和产品，还有很多其他的公司和产品也在使用Mesos来管理其分布式系统和应用程序。
+
+
+Mesos可以在Linux和MacOS等Unix系统上安装。下面是一些安装Mesos的步骤：
+
+安装依赖项：Mesos需要一些依赖项，例如Java、Python、CMake、Autoconf等，可以使用包管理器进行安装。
+
+下载和编译Mesos源代码：可以从Mesos官网（http://mesos.apache.org/）下载最新的Mesos源代码，也可以从GitHub上获取。然后使用命令进行下载和编译：
+
+安装Mesos：编译完成后，使用命令安装Mesos：
+
+配置Mesos：可以使用配置文件进行Mesos的配置，可以修改 /etc/mesos/mesos-master 、 /etc/mesos/mesos-slave 文件来进行配置Mesos的Master节点和 Slave 节点：
+
+运行Mesos：可以使用以下命令来启动Mesos：
+
+mesos-master --ip=<ip_address> --work_dir=<working_directory>
+mesos-slave --master=<ip_address>:<port> --work_dir=<working_directory>
+
+其中，<ip_address>为Master节点的IP地址，<port>为Master节点的端口号，<working_directory>为Mesos的工作目录。
+
+这些步骤可以帮助你在Unix系统上安装和配置Mesos。，Mesos的安装和配置可能会因操作系统和版本的不同而有所差异。
+
+
+在Mesos中，可以使用框架（Framework）来部署和管理应用程序。Mesos支持多种类型的框架，包括基于容器的框架（如Docker）和基于进程的框架（如Hadoop、Spark等）。下面是一个基于Marathon框架的示例，来演示如何在Mesos上部署一个应用程序
+
+- 安装和启动Mesos Master和Slave节点
+
+- 安装和启动Marathon框架
+
+- 创建应用程序的JSON文件：Marathon使用JSON文件来定义应用程序的配置和属性。可以创建一个名为myapp.json的JSON文件，包含以下内容：
+
+{
+  "id": "myapp",
+  "cmd": "python myapp.py",
+  "cpus": 0.1,
+  "mem": 64.0,
+  "instances": 1
+}
+
+其中，id为应用程序的唯一标识符，cmd为应用程序的启动命令，cpus和mem分别指定了应用程序所需的CPU和内存资源，instances指定了应用程序的实例数。
+
+
+- 提交应用程序到Marathon：可以使用以下命令来提交应用程序到Marathon：
+
+curl -X POST -H "Content-Type: application/json" http://<marathon-ip>:<marathon-port>/v2/apps -d @myapp.json
+
+其中，<marathon-ip>和<marathon-port>分别为Marathon的IP地址和端口号，@myapp.json表示提交的JSON文件。
+
+- 查看应用程序状态：可以使用以下命令来查看应用程序的状态：
+
+curl http://<marathon-ip>:<marathon-port>/v2/apps/myapp
+
+其中，myapp为应用程序的ID。
+
+通过以上步骤，就可以在Mesos上部署和管理一个应用程序。请注意，Mesos的应用程序部署和管理方法可能会因使用的框架不同而有所不同。
+
+在Mesos中，可以使用Mesos Web UI来查看应用程序的状态和日志信息。下面是一个简单的示例：
+
+打开Mesos Web UI：在浏览器中输入Mesos Master的IP地址和端口号，例如http://<mesos-master-ip>:5050，就可以打开Mesos Web UI。
+
+选择应用程序：在Mesos Web UI中，可以看到所有正在运行的应用程序。可以选择要查看的应用程序，然后单击其名称进入应用程序的详情页面。
+
+查看应用程序状态：在应用程序的详情页面中，可以查看应用程序的状态和属性信息，例如CPU和内存使用情况、运行时间、任务状态等。
+
+查看应用程序日志：在应用程序的详情页面中，可以查看应用程序的日志信息。可以选择要查看的任务实例，然后单击“Logs”按钮来查看该实例的日志。
+
+除了Mesos Web UI外，还可以使用Mesos CLI命令行工具来查看应用程序的状态和日志信息
+
+在Mesos中，可以使用Mesos Web UI来查看应用程序的状态和日志信息。下面是一个简单的示例：
+
+打开Mesos Web UI：在浏览器中输入Mesos Master的IP地址和端口号，例如http://<mesos-master-ip>:5050，就可以打开Mesos Web UI。
+
+选择应用程序：在Mesos Web UI中，可以看到所有正在运行的应用程序。可以选择要查看的应用程序，然后单击其名称进入应用程序的详情页面。
+
+查看应用程序状态：在应用程序的详情页面中，可以查看应用程序的状态和属性信息，例如CPU和内存使用情况、运行时间、任务状态等。
+
+查看应用程序日志：在应用程序的详情页面中，可以查看应用程序的日志信息。可以选择要查看的任务实例，然后单击“Logs”按钮来查看该实例的日志。
+
+除了Mesos Web UI外，还可以使用Mesos CLI命令行工具来查看应用程序的状态和日志信息
+
+总之，Mesos是一个强大的分布式系统内核，可以为大规模的集群提供高效、可靠和灵活的资源管理。它的架构和设计使得它可以适应各种类型的应用程序和框架，并具有良好的可扩展性和高可用性。虽然在某些方面与Kubernetes类似，但Mesos的优势在于其灵活性和可定制性，以及对多种编程语言和应用程序类型的支持。对于需要对资源进行更细粒度的控制、同时需要高度可定制性的企业来说，Mesos是一个非常有用的工具。
+
+当然，Mesos也存在一些缺点和挑战，例如需要较高的技术水平、部署和管理复杂性较高等。但是，随着Mesos不断发展和改进，这些问题也放进会得到逐步解决。
