@@ -1,14 +1,5 @@
-FROM node
+FROM nginx
 
-RUN mkdir -p /root/app
-
-COPY ./src/.vuepress/dist /root/app/dist/
-COPY package.json /root/app
-
-WORKDIR /root/app/
-
-RUN npm install
+COPY ./src/.vuepress/dist /usr/share/nginx/html/
 
 EXPOSE 6666
-
-CMD ["node","/root/app/dist/index.html"]
