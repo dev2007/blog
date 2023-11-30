@@ -35,7 +35,7 @@ module.exports = {
 
     personalInfo: {
       nickname: '阿呜',
-      description: '‍💻云原生框架 Micronaut 推广者<br/>☁️云计算从业者<br/>🌱高级软件工程师<br/>☘️系统架构师<br/>📱公众号：程序员爱读书</br><img src="https://images.bookhub.tech/mp/mp.png" width="60%"/>',
+      description: '‍📢云原生框架 Micronaut 推广者<br/>☁️云计算从业者<br/>🌱高级软件工程师<br/>☘️系统架构师<br/>💻博客：<a href="https://luansheng.fun">https://luansheng.fun</a><br/>📱公众号：程序员爱读书</br><img src="https://images.bookhub.tech/mp/mp.png" width="60%"/>',
       location: '中国·成都',
       organization: 'MortNon',
       avatar: 'https://images.bookhub.tech/mp/avatar.jpg',
