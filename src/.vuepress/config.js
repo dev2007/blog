@@ -1,6 +1,6 @@
 module.exports = {
   title: '阿呜的边城-Awu\'s blog',
-  description: '分享一切与开发编程以及开发者相关的文章。微信公众号：阿呜的编程',
+  description: '分享一切与开发编程以及开发者相关的文章。微信公众号：程序员爱读书',
   head: [
     ['link', { rel: 'icon', href: '/favicon/favicon.ico' }],
     ['meta', { name: 'keywords', content: '开发者,程序员,程序猿,程序媛,极客,码农,编程,代码,软件开发,开源,IT网站,技术社区,Developer,Programmer,Coder,Geek,Coding,Code,阿呜的边程,阿呜的编程' }]
@@ -29,16 +29,16 @@ module.exports = {
 
   themeConfig: {
     lang: Object.assign(require('vuepress-theme-meteorlxy/lib/langs/zh-CN'), {
-      home: '阿呜的边城',
+      home: '❤️学而不思则罔，思而不学则殆❤️',
       posts: '文章列表',
     }),
 
     personalInfo: {
       nickname: '阿呜',
-      description: '分享与开发者相关的文章。<br/>学而不思则罔，思而不学则殆。',
+      description: '‍💻云原生框架 Micronaut 推广者<br/>☁️云计算从业者<br/>🌱高级软件工程师<br/>☘️系统架构师<br/>📱公众号：程序员爱读书</br><img src="https://images.bookhub.tech/mp/mp.png" width="60%"/>',
       location: '中国·成都',
       organization: 'MortNon',
-      avatar: '/wolf.png',
+      avatar: 'https://images.bookhub.tech/mp/avatar.jpg',
       email: 'mortnon@outlook.com',
       sns: {
         github: {
@@ -48,7 +48,7 @@ module.exports = {
         juejin: {
           account: 'dev2007',
           link: 'https://juejin.cn/user/2620868693599405',
-        },
+        }
       },
     },
 
@@ -76,9 +76,10 @@ module.exports = {
     lastUpdated: true,
 
     nav: [
-      { text: '阿呜的边城', link: '/', exact: true },
+      { text: '程序员爱读书', link: '/', exact: true },
       { text: '文章列表', link: '/posts/', exact: false },
-      { text: 'GitHub', link: 'https://github.com/dev2007'}
+      { text: 'GitHub', link: 'https://github.com/dev2007'},
+      { text: 'Micronaut', link: 'https://micronaut.bookhub.tech'}
     ],
 
     smoothScroll: true,
@@ -99,7 +100,7 @@ module.exports = {
 
     // 分页配置 (可选)
     pagination: {
-      perPage: 5,
+      perPage: 10,
     },
 
     // 默认页面（可选，默认全为 true）
