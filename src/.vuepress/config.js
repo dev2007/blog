@@ -1,5 +1,5 @@
 module.exports = {
-  title: '阿呜的边城-Awu\'s blog',
+  title: '阿呜的边城-Awu\'s World',
   description: '分享一切与开发编程以及开发者相关的文章。微信公众号：程序员爱读书',
   head: [
     ['link', { rel: 'icon', href: '/favicon/favicon.ico' }],
@@ -35,7 +35,7 @@ module.exports = {
 
     personalInfo: {
       nickname: '阿呜',
-      description: '‍📢云原生框架 Micronaut 推广者<br/>☁️云计算从业者<br/>🌱高级软件工程师<br/>☘️系统架构师<br/>💻博客：<a href="https://luansheng.fun">https://luansheng.fun</a><br/>📱公众号：程序员爱读书</br><img src="https://images.bookhub.tech/mp/mp.png" width="60%"/>',
+      description: '‍📢云原生框架 Micronaut 推广者<br/>☁️云计算从业者<br/>🌱高级软件工程师<br/>☘️系统架构师<br/>💻个人空间：<a href="https://luansheng.fun">https://luansheng.fun</a><br/>📱公众号：程序员爱读书</br><img src="https://images.bookhub.tech/mp/mp.png" width="60%"/>',
       location: '中国·成都',
       organization: 'MortNon',
       avatar: 'https://images.bookhub.tech/mp/avatar.jpg',
@@ -90,13 +90,14 @@ module.exports = {
     },
 
     // 评论配置，参考下方 [页面评论] 章节
-    comments: {
-      proxy: 'https://cors-server.bookhub.tech/github_access_token',
-      owner: 'dev2007',
-      repo: 'gitalk-comment',
-      clientId: '2a33e1cb0be96f2d43a3',
-      clientSecret: '0da0b8b354365388cceffecd8c62e35393b635af',
-    },
+    // comments: {
+    //   proxy: 'https://cors-server.bookhub.tech/github_access_token',
+    //   owner: 'dev2007',
+    //   repo: 'gitalk-comment',
+    //   clientId: '2a33e1cb0be96f2d43a3',
+    //   clientSecret: '0da0b8b354365388cceffecd8c62e35393b635af',
+    // },
+    comments: false,
 
     // 分页配置 (可选)
     pagination: {
