@@ -14,7 +14,7 @@ header-image: /assets/img/summer-stock-zVCgHOv3Tiw-unsplash.jpg
 
 <!-- more -->
 
-![image.png](./imgs/micronaut/2.PNG)
+![image.png](./imgs/micronaut/1127.png)
 
 具体文案如下：
 
